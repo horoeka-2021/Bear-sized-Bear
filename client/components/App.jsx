@@ -12,6 +12,7 @@ function App () {
   return (
     <>
       <div className='title'>
+        <img src='/images/logo.png' />
         <h1>Bear Sized Bear</h1>
       </div>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
