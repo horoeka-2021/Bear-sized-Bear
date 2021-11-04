@@ -17,11 +17,12 @@ function App () {
       </div>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className='main'>
-      <div className='nav'><Route path='/' render={() => <Nav stories={storyData} />} /></div>
-      <div className='home'>  <Route path='/' exact component={About} />
-        <Route path='/new-story' exact component={NewStory} />
-        <Route path='/story/:storyTitle' exact render={() => <Story stories={storyData} />} />
-        <AddWord />
+        <div className='nav'><Route path='/' render={() => <Nav stories={storyData} />} /></div>
+        <div className='home'>
+          <Route path='/' exact component={About} />
+          <Route path='/new-story' exact component={NewStory} />
+          <Route path='/story/:storyTitle' exact render={() => <Story stories={storyData} />} />
+          <AddWord />
         </div>
       </div>
     </>
