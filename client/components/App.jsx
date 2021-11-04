@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Nav from './Nav'
-import Home from './Home'
+import About from './About'
 
 function App () {
   return (
@@ -12,7 +12,7 @@ function App () {
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className='main'>
         <Nav />
-        <Home />
+        <About />
       </div>
     </>
   )
