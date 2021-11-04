@@ -4,10 +4,10 @@ import { Route } from 'react-router-dom'
 import Nav from './Nav'
 import About from './About'
 import Story from './Story'
+import AddWord from './AddWords'
 import NewStory from './NewStory'
 
 import storyData from '../../data/stories'
-import AddWord from './AddWords'
 
 function App () {
   return (
@@ -22,8 +22,8 @@ function App () {
         <div className='home'>
           <Route path='/' exact component={About} />
           <Route path='/new-story' exact component={NewStory} />
+          <Route path='/add-words' exact component={AddWord} />
           <Route path='/story/:storyTitle' exact render={() => <Story stories={storyData} />} />
-          <AddWord />
         </div>
       </div>
     </>
