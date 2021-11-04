@@ -6,13 +6,14 @@ import Home from './Home'
 function App () {
   return (
     <>
-      <div className='title'>
-
-      </div>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className='main'>
-        <Nav />
-        <Home />
+        <div className='nav'>
+          <Nav />
+        </div>
+        <div className='home'>
+          <Home />
+        </div>
       </div>
     </>
   )
