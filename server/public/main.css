@@ -1,12 +1,17 @@
 body {
   background-color: #faf8f1;
   color: #0a1520;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 .main, .title {
   display: flex;
   flex-direction: row;
+  font-family: 'Zen Kurenaido', sans-serif
+}
+
+#navBar {
+  background-color: #29707A;
 }
 
 .title img {
