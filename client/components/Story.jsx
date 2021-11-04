@@ -3,13 +3,16 @@ import { Link, useParams } from 'react-router-dom'
 
 function Story (props) {
   const { storyTitle } = useParams()
-  console.log(storyTitle)
-  const story = props.stories[storyTitle]
-
+  const story = props.stories.find(story => story.title === storyTitle)
+  console.log(story);
+  const storyText = story.story
+  console.log(storyText.split('.'));
   return (
     <div>
       <h2>{story.title}</h2>
-      <p>{story.story}</p>
+      {storyText.split('. ').map(sentence => {
+        return ( <p>{sentence}.</p> )
+      })}
     </div>
   )
 }

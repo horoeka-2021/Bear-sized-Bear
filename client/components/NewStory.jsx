@@ -3,7 +3,7 @@ import React from 'react'
 function NewStory () {
   return (
     <div>
-      <h2>Hi There</h2>
+      <h2>Add A New Story</h2>
     </div>
   )
 }
