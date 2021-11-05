@@ -1,17 +1,27 @@
 import React from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { HashRouter, Link, useParams } from 'react-router-dom'
+import Hash from 'hash-string'
 
 function Story (props) {
   const { storyTitle } = useParams()
   const story = props.stories.find(story => story.title === storyTitle)
-  console.log(story);
   const storyText = story.story
-  console.log(storyText.split('.'));
+
+  let wordsObj = props.words
+  let replacedStoryText = storyText
+  for (const [placeholder, userInput] of Object.entries(wordsObj)) {
+    replacedStoryText = replacedStoryText.replaceAll(`{{${placeholder}}}`, userInput)
+  }
+
   return (
     <div>
       <h2>{story.title}</h2>
-      {storyText.split('. ').map(sentence => {
-        return ( <p>{sentence}.</p> )
+      {replacedStoryText.split('. ').map(sentence => {
+        return (
+          <p key={Hash(sentence)}>
+            {sentence}.
+          </p>
+        )
       })}
     </div>
   )
