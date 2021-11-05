@@ -8,15 +8,21 @@ function Story (props) {
   const storyText = story.story
 
   let wordsObj = props.words
-  let replacedStoryText = storyText
-  for (const [placeholder, userInput] of Object.entries(wordsObj)) {
-    replacedStoryText = replacedStoryText.replaceAll(`{{${placeholder}}}`, userInput)
+  
+  let replacedStoryText
+  function replaceWords () {
+    replacedStoryText = storyText
+    for (const [placeholder, userInput] of Object.entries(wordsObj)) {
+      replacedStoryText = replacedStoryText.replaceAll(`{{${placeholder}}}`, userInput)
+    }
+    return replacedStoryText
   }
+  replaceWords()
 
   return (
     <div>
       <h2>{story.title}</h2>
-      {replacedStoryText.split('. ').map(sentence => {
+      {replacedStoryText.split('.').map(sentence => {
         return (
           <p key={Hash(sentence)}>
             {sentence}.
