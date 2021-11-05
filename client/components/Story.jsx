@@ -16,8 +16,8 @@ function Story (props) {
       replacedStoryText = replacedStoryText.replaceAll(`{{${placeholder}}}`, userInput)
     }
 
-    replacedStoryText = replacedStoryText.replaceAll('.', '.\n')
-    replacedStoryText = replacedStoryText.replaceAll('!', '!\n')
+    replacedStoryText = replacedStoryText.replaceAll('. ', '.\n')
+    replacedStoryText = replacedStoryText.replaceAll('! ', '!\n')
 
     return replacedStoryText
   }

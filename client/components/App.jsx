@@ -9,15 +9,12 @@ import NewStory from './NewStory'
 
 import storyData from '../../data/stories'
 
-const initial =
-  { noun: '', adjective: '', nationality: '', plural_noun: '', person: '', shapes: '', food: '', number: '' }
-
-const words = {
+const initial = {
   adjective: 'big',
   nationality: 'New Zealand',
-  person: 'Sean',
-  'plural noun': 'eels',
-  noun: 'ball',
+  person: '[placeholder]',
+  'plural noun': '[placeholder]',
+  noun: '[placeholder]',
   shapes: 'rhombus',
   food: 'steak',
   number: '1',
@@ -51,9 +48,11 @@ function App () {
         <div className='home'>
           <Route path='/' exact component={About} />
 
-          <Route path='/new-story' exact render={() => <NewStory words={words} />} />
+          <Route path='/new-story' exact render={() => <Story words={words} />} />
+          
           <Route path='/add-words' exact
             render={() => <AddWords words={words} setWords={setWords} />}/>
+          
           <Route path='/story/:storyTitle' exact render={
             () => {
               return (
