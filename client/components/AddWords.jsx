@@ -127,12 +127,12 @@ function AddWords ({ setWords, words }) {
 
           <label>
             <span>Vegetable</span>
-            <input name="vegetables" value={form.vegetable} onChange={handleForm} />
+            <input name="vegetable" value={form.vegetable} onChange={handleForm} />
           </label><br />
 
           <label>
             <span>Exclamation</span>
-            <input name="exclamations" value={form.exclamation} onChange={handleForm} />
+            <input name="exclamation" value={form.exclamation} onChange={handleForm} />
           </label><br />
 
           <label>
@@ -142,12 +142,12 @@ function AddWords ({ setWords, words }) {
 
           <label>
             <span>Verb Ending in -ing</span>
-            <input name="verb ending" value={form['verb ending in -ing']} onChange={handleForm}/>
+            <input name="verb ending in -ing" value={form['verb ending in -ing']} onChange={handleForm}/>
           </label><br />
 
           <label>
             <span>Verb past tense</span>
-            <input name="verb past" value={form['verb past tense']} onChange={handleForm}/>
+            <input name="verb past tense" value={form['verb past tense']} onChange={handleForm}/>
           </label><br />
 
           <label>
