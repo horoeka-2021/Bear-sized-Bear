@@ -5,43 +5,56 @@ function AddWords ({ setWords, words }) {
   const history = useHistory()
 
   const [form, setForm] = useState({
-    noun: '',
-    adjective: '',
-    nationality: '',
-    plural_noun: '',
-    person: '',
-    shapes: '',
-    food: '',
-    number: ''
+    adjective: 'big',
+    nationality: 'New Zealand',
+    person: '[placeholder]',
+    'plural noun': '[placeholder]',
+    noun: '[placeholder]',
+    shapes: 'rhombus',
+    food: 'steak',
+    number: '1',
+    verb: 'run',
+    place: 'Auckland',
+    vegetable: 'banana',
+    exclamation: 'WAT',
+    color: 'red',
+    'verb ending in -ing': 'running',
+    'verb past tense': 'typed',
+    adverb: 'quickly',
+    celebrity: 'Chris Parker',
+    'silly word': 'goose',
+    "friend's name": 'Ahmad',
+    animal: 'dog'
   })
 
   function handleAdd (event) {
     event.preventDefault()
 
-    // const newForm = {
-    //   ...form
-    // }
-    // console.log(newForm)
-
-    // add a new element the existing array
-    // const newWords = [...words, newForm]
-
-    // console.log(newWords)
-
-    // set the state
     setWords(form)
     setForm({
-      noun: '',
       adjective: '',
       nationality: '',
-      plural_noun: '',
       person: '',
+      'plural noun': '',
+      noun: '',
       shapes: '',
       food: '',
-      number: ''
+      number: '',
+      verb: '',
+      place: '',
+      vegetable: '',
+      exclamation: '',
+      color: '',
+      'verb ending in -ing': '',
+      'verb past tense': '',
+      adverb: '',
+      celebrity: '',
+      'silly word': '',
+      "friend's name": '',
+      animal: ''
     })
 
-    history.push('/new-story')
+    history.push('/story/Pizza')
   }
 
   function handleForm (event) {
@@ -52,7 +65,6 @@ function AddWords ({ setWords, words }) {
       ...form,
       [name]: value
     })
-    // console.log(value, name)
   }
 
   return (
@@ -65,7 +77,7 @@ function AddWords ({ setWords, words }) {
           <legend>Pizza Story - Please add some words</legend>
           <label>
             <span>Noun</span>
-            <input type="text" name="noun" value={form.noun} onChange={handleForm}/>
+            <input name="noun" value={form.noun} onChange={handleForm}/>
           </label><br />
 
           <label>
@@ -80,7 +92,7 @@ function AddWords ({ setWords, words }) {
 
           <label>
             <span>Plural noun</span>
-            <input name="plural_noun" value={form.plural_noun} onChange={handleForm} />
+            <input name="plural noun" value={form['plural noun']} onChange={handleForm} />
           </label><br />
 
           <label>
@@ -100,7 +112,67 @@ function AddWords ({ setWords, words }) {
 
           <label>
             <span>Number</span>
-            <input type="text" name="number" value={form.number} onChange={handleForm} />
+            <input name="number" value={form.number} onChange={handleForm} />
+          </label><br />
+
+          <label>
+            <span>Verb</span>
+            <input name="verb" value={form.verb} onChange={handleForm}/>
+          </label><br />
+
+          <label>
+            <span>Place</span>
+            <input name="place" value={form.place} onChange={handleForm}/>
+          </label><br />
+
+          <label>
+            <span>Vegetable</span>
+            <input name="vegetables" value={form.vegetable} onChange={handleForm} />
+          </label><br />
+
+          <label>
+            <span>Exclamation</span>
+            <input name="exclamations" value={form.exclamation} onChange={handleForm} />
+          </label><br />
+
+          <label>
+            <span>Color</span>
+            <input name="color" value={form.color} onChange={handleForm} />
+          </label><br />
+
+          <label>
+            <span>Verb Ending in -ing</span>
+            <input name="verb ending" value={form['verb ending in -ing']} onChange={handleForm}/>
+          </label><br />
+
+          <label>
+            <span>Verb past tense</span>
+            <input name="verb past" value={form['verb past tense']} onChange={handleForm}/>
+          </label><br />
+
+          <label>
+            <span>adverb</span>
+            <input name="adverb" value={form.adverb} onChange={handleForm} />
+          </label><br />
+
+          <label>
+            <span>celebrity</span>
+            <input name="celebrity" value={form.celebrity} onChange={handleForm}/>
+          </label><br />
+
+          <label>
+            <span>Silly Word</span>
+            <input name="silly word" value={form['silly word']} onChange={handleForm}/>
+          </label><br />
+
+          <label>
+            <span>Friend's Name</span>
+            <input name="friend's name" value={form["friend's name"]} onChange={handleForm} />
+          </label><br />
+
+          <label>
+            <span>Animal</span>
+            <input name="animal" value={form.animal} onChange={handleForm} />
           </label><br />
 
           <button onClick={handleAdd}>Submit</button>
