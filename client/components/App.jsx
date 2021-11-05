@@ -9,7 +9,6 @@ import NewStory from './NewStory'
 
 import storyData from '../../data/stories'
 
-
 const initial =
   { noun: '', adjective: '', nationality: '', plural_noun: '', person: '', shapes: '', food: '', number: '' }
 
@@ -17,9 +16,9 @@ const words = {
   adjective: 'big',
   nationality: 'New Zealand',
   person: 'Sean',
-  'plural noun': 'balls',
-  noun: 'Ludo',
-  shapes: 'circle',
+  'plural noun': 'eels',
+  noun: 'ball',
+  shapes: 'rhombus',
   food: 'steak',
   number: '1',
   verb: 'run',
@@ -28,14 +27,13 @@ const words = {
   exclamation: 'WAT!',
   color: 'red',
   'verb ending in -ing': 'running',
-  'verb past tense': 'ran',
-  adverb: 'fast',
+  'verb past tense': 'typed',
+  adverb: 'quickly',
   celebrity: 'Chris Parker',
   'silly word': 'goose',
   "friend's name": 'Ahmad',
   animal: 'dog'
 }
-
 
 function App () {
   const [words, setWords] = useState(initial)

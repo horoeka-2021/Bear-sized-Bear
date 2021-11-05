@@ -58,11 +58,11 @@ function AddWords ({ setWords, words }) {
   return (
 
     <>
-      <h2>Add word</h2><br />
+      <h2>Add words</h2><br />
 
       <form>
         <fieldset>
-          <legend>Pizza Story - Please add some word</legend>
+          <legend>Pizza Story - Please add some words</legend>
           <label>
             <span>Noun</span>
             <input type="text" name="noun" value={form.noun} onChange={handleForm}/>
@@ -79,7 +79,7 @@ function AddWords ({ setWords, words }) {
           </label><br />
 
           <label>
-            <span>Plura noun</span>
+            <span>Plural noun</span>
             <input name="plural_noun" value={form.plural_noun} onChange={handleForm} />
           </label><br />
 
