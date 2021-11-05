@@ -9,7 +9,8 @@ function Nav (props) {
     <div>
       <br />
       <h3><Link to='/'>Home</Link></h3>
-      <h4><Link to='/new-story'>Create New Story</Link></h4>
+      <h4><Link to='/add-words'>Add Words</Link></h4>
+      {/* <h4><Link to='/new-story'>Create New Story</Link></h4> */}
       <h4>Choose A Story:</h4>
       <ul>
         <li><Link to={`/story/${randomStory.title}`}>Random Story</Link></li>
