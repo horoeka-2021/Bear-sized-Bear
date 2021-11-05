@@ -34,6 +34,8 @@ function Story (props) {
           )
         })
       }
+      <br/>
+      <img src={story.image} />
     </div>
   )
 }

@@ -1,21 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route } from 'react-router-dom'
 
 import Nav from './Nav'
 import About from './About'
 import Story from './Story'
-import AddWord from './AddWords'
+import AddWords from './AddWords'
 import NewStory from './NewStory'
 
 import storyData from '../../data/stories'
+
+const initial =
+  { noun: '', adjective: '', nationality: '', plural_noun: '', person: '', shapes: '', food: '', number: '' }
 
 const words = {
   adjective: 'big',
   nationality: 'New Zealand',
   person: 'Sean',
-  'plural noun': 'balls',
-  noun: 'Ludo',
-  shapes: 'circle',
+  'plural noun': 'eels',
+  noun: 'ball',
+  shapes: 'rhombus',
   food: 'steak',
   number: '1',
   verb: 'run',
@@ -24,8 +27,8 @@ const words = {
   exclamation: 'WAT',
   color: 'red',
   'verb ending in -ing': 'running',
-  'verb past tense': 'ran',
-  adverb: 'fast',
+  'verb past tense': 'typed',
+  adverb: 'quickly',
   celebrity: 'Chris Parker',
   'silly word': 'goose',
   "friend's name": 'Ahmad',
@@ -33,6 +36,8 @@ const words = {
 }
 
 function App () {
+  const [words, setWords] = useState(initial)
+
   return (
     <>
       <div >
@@ -45,8 +50,10 @@ function App () {
         </div>
         <div className='home'>
           <Route path='/' exact component={About} />
-          <Route path='/new-story' exact component={NewStory} />
-          <Route path='/add-words' exact component={AddWord} />
+
+          <Route path='/new-story' exact render={() => <NewStory words={words} />} />
+          <Route path='/add-words' exact
+            render={() => <AddWords words={words} setWords={setWords} />}/>
           <Route path='/story/:storyTitle' exact render={
             () => {
               return (

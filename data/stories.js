@@ -1,7 +1,8 @@
 export default [
   {
     title: 'Pizza',
-    story: 'Pizza was invented by a {{adjective}} {{nationality}} chef titled {{person}}. To make a pizza, you need to take a lump of {{noun}}, and make a think, round {{adjective}} {{noun}}. Then you cover it with {{adjective}} sauce, {{adjective}} cheese, and fresh chopped {{plural noun}}. Next you have to bake it in a very hot {{noun}}. When it is done, cut it into {{number}} {{shapes}}. Some people like {{food}} pizza the best, but my favourite is the {{food}} pizza. If I could, I would eat pizza {{number}} times a day!',
+    image: '/images/pumpkins.png',
+    story: 'Pizza was invented by a {{adjective}} {{nationality}} chef named {{person}}. To make a pizza, you need to take a lump of {{noun}}, and make a thick, round {{adjective}} {{noun}}. Then you cover it with {{adjective}} sauce, {{adjective}} cheese, and fresh chopped {{plural noun}}. Next you have to bake it in a very hot {{noun}}. When it is done, cut it into {{number}} {{shapes}}. Some people like {{food}} pizza the best, but my favourite is the {{food}} pizza. If I could, I would eat pizza {{number}} times a day!',
     required_words: [
       'adjective',
       'nationality',
@@ -32,6 +33,7 @@ export default [
 
   {
     title: 'Halloween',
+    image: '/images/pumpkins.png',
     story: "Last night I went to the most {{adjective}} Halloween party! The invitation was delivered by {{animal}} and told me to go to the deep dark {{place}} and {{verb}} all the way to the very top of the spooky {{noun}}. I {{verb past tense}} the doorbell {{adverb}}. {{exclamation}}! My friend {{friend's name}} answered the door dressed up as {{celebrity}} and said \"{{silly word}}!\" there were {{number}} different costumes, including {{adjective}} ghouls and mummified {{plural noun}}. My favourite part of the party was the pumpkin {{verb ending in -ing}} and bobbing for {{plural noun}}. I can't wait for next Halloween - it will be even more {{adjective}}!",
     required_words: [
       'adjective',
