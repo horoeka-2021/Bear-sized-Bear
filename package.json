@@ -11,7 +11,8 @@
     "client": "npm run webpack -- --watch",
     "server": "node server",
     "test": "jest --watch --noStackTrace",
-    "lint": "eslint --ext .js,.jsx ."
+    "lint": "eslint --ext .js,.jsx .",
+    "build": "webpack"
   },
   "babel": {
     "presets": [
