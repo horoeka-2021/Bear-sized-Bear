@@ -12,9 +12,8 @@ import storyData from '../../data/stories'
 function App () {
   return (
     <>
-      <div className='title'>
-        <img src='/images/logo.png' />
-        <h1>Tall Tales</h1>
+      <div >
+        <h1 className='title' >Tall Tales</h1>
       </div>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className='main'>
@@ -25,6 +24,9 @@ function App () {
           <Route path='/add-words' exact component={AddWord} />
           <Route path='/story/:storyTitle' exact render={() => <Story stories={storyData} />} />
         </div>
+      </div>
+      <div className='bearContainer'>
+        <img className='bear' src='/images/logo.png' />
       </div>
     </>
   )

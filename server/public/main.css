@@ -11,6 +11,13 @@ p {
   padding-left: 2vw;
   padding-right: 2vw;
 }
+.bearContainer {
+  display: flex;
+  align-items: flex-end
+}
+.bear {
+  max-width: 200px;
+}
 
 .main {
   display: flex;
@@ -18,10 +25,10 @@ p {
   font-family: 'Zen Kurenaido', sans-serif
 }
 
-#title {
+.title {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 40px;
-  background: radial-gradient(150px 30px, #d7b9d5 0%, rgba(80, 80, 80, 0) );
+  text-align: center
 }
 
 .home {
