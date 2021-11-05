@@ -12,8 +12,8 @@ import storyData from '../../data/stories'
 function App () {
   return (
     <>
-      <div className='title'>
-        <h1>Tall Tales</h1>
+      <div >
+        <h1 className='title' >Tall Tales</h1>
       </div>
       {/* This 'main' div is only for styling (so we can use flexbox) */}
       <div className='main'>
