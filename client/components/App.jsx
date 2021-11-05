@@ -18,6 +18,18 @@ const words = {
   shapes: 'circle',
   food: 'steak',
   number: '1',
+  verb: 'run',
+  place: 'Auckland',
+  vegetable: 'banana',
+  exclamation: 'WAT!',
+  color: 'red',
+  'verb ending in -ing': 'running',
+  'verb past tense': 'ran',
+  adverb: 'fast',
+  celebrity: 'Chris Parker',
+  'silly word': 'goose',
+  "friend's name": 'Ahmad',
+  animal: 'dog'
 }
 
 function App () {
