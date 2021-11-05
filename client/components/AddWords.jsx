@@ -4,11 +4,11 @@ function AddWord () {
   return (
 
     <>
-      <h2>Add word</h2><br />
+      <h2>Add words</h2><br />
 
       <form>
         <fieldset>
-          <legend>Pizza Story - Please add some word</legend>
+          <legend>Pizza Story - Please add some words</legend>
           <label>
             <span>Noun</span>
             <input type="text" name="noun" value="" />
@@ -25,7 +25,7 @@ function AddWord () {
           </label><br />
 
           <label>
-            <span>Plura noun</span>
+            <span>Plural noun</span>
             <input type="text" name="plural-noun" value="" />
           </label><br />
 

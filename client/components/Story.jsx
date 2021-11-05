@@ -7,8 +7,8 @@ function Story (props) {
   const story = props.stories.find(story => story.title === storyTitle)
   const storyText = story.story
 
-  let wordsObj = props.words
-  
+  const wordsObj = props.words
+
   let replacedStoryText
   function replaceWords () {
     replacedStoryText = storyText
@@ -29,6 +29,8 @@ function Story (props) {
           </p>
         )
       })}
+      <br/>
+      <img src={story.image} />
     </div>
   )
 }
