@@ -21,7 +21,7 @@ const words = {
   verb: 'run',
   place: 'Auckland',
   vegetable: 'banana',
-  exclamation: 'WAT!',
+  exclamation: 'WAT',
   color: 'red',
   'verb ending in -ing': 'running',
   'verb past tense': 'ran',

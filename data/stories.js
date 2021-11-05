@@ -16,7 +16,7 @@ export default [
   },
   {
     title: 'Snowman',
-    story: "Let's build a snowman! First we need to have a really {{adjective}}snowstorm, of course on a {{adjective}} day. Watching all that {{color}} snow fall makes make {{verb}} for a bowl of {{adjective}} {{vegetable}}! {{exclamation}} it's still {{verb ending in -ing}} and there's a lot of it! Let's go! Next is {{verb ending in -ing}} to go out in the cold. Once that is done, we need to get busy. We make a {{noun}} and {{verb}} it in the {{place}}. It gets so {{adjective}} we can't roll it anymore. Then we do {{number}} more and stack them on top of each other. We {{verb}} for {{noun}} in the driveway for the {{noun}}, eyes and {{noun}}. Mom gives us a scarf, hat and {{vegetable}} to complete {{person}}! {{exclamation}} he's done! Finally. Now the best part, {{adjective}} {{noun}}.",
+    story: "Let's build a snowman! First we need to have a really {{adjective}} snowstorm, of course on a {{adjective}} day. Watching all that {{color}} snow fall makes make {{verb}} for a bowl of {{adjective}} {{vegetable}}! {{exclamation}} it's still {{verb ending in -ing}} and there's a lot of it! Let's go! Next is {{verb ending in -ing}} to go out in the cold. Once that is done, we need to get busy. We make a {{noun}} and {{verb}} it in the {{place}}. It gets so {{adjective}} we can't roll it anymore. Then we do {{number}} more and stack them on top of each other. We {{verb}} for {{noun}} in the driveway for the {{noun}}, eyes and {{noun}}. Mom gives us a scarf, hat and {{vegetable}} to complete {{person}}! {{exclamation}} he's done! Finally. Now the best part, {{adjective}} {{noun}}.",
     required_words: [
       'adjective',
       'noun',

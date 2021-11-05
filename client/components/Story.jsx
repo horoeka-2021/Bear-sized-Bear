@@ -7,28 +7,33 @@ function Story (props) {
   const story = props.stories.find(story => story.title === storyTitle)
   const storyText = story.story
 
-  let wordsObj = props.words
-  
+  const wordsObj = props.words
   let replacedStoryText
-  function replaceWords () {
+
+  function replaceAndCleanWords () {
     replacedStoryText = storyText
     for (const [placeholder, userInput] of Object.entries(wordsObj)) {
       replacedStoryText = replacedStoryText.replaceAll(`{{${placeholder}}}`, userInput)
     }
+
+    replacedStoryText = replacedStoryText.replaceAll('.', '.\n')
+    replacedStoryText = replacedStoryText.replaceAll('!', '!\n')
+
     return replacedStoryText
   }
-  replaceWords()
 
   return (
     <div>
       <h2>{story.title}</h2>
-      {replacedStoryText.split('.').map(sentence => {
-        return (
-          <p key={Hash(sentence)}>
-            {sentence}.
-          </p>
-        )
-      })}
+      {
+        replaceAndCleanWords().split(['\n']).map((sentence, index) => {
+          return (
+            <p key={Hash(sentence + index)}>
+              {sentence}
+            </p>
+          )
+        })
+      }
     </div>
   )
 }
