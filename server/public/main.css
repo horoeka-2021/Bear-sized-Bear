@@ -11,6 +11,13 @@ p {
   padding-left: 2vw;
   padding-right: 2vw;
 }
+.bearContainer {
+  display: flex;
+  align-items: flex-end
+}
+.bear {
+  max-width: 200px;
+}
 
 .main {
   display: flex;
